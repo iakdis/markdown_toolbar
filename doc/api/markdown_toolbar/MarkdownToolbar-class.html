@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the MarkdownToolbar class from the markdown_toolbar library, for the Dart programming language.">
+  <title>MarkdownToolbar class - markdown_toolbar library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">markdown_toolbar</a></li>
+    <li><a href="../markdown_toolbar/markdown_toolbar-library.html">markdown_toolbar</a></li>
+    <li class="self-crumb">MarkdownToolbar class</li>
+  </ol>
+  <div class="self-name">MarkdownToolbar</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span class="material-symbols-outlined">
+        brightness_4
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">MarkdownToolbar</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+
+
+    <section>
+      <dl class="dl-horizontal">
+        
+  <dt>Inheritance</dt>
+  <dd>
+    <ul class="gt-separated dark clazz-relationships">
+      <li><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></li>
+        <li><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree-class.html">DiagnosticableTree</a></li>
+        <li><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></li>
+        <li><a href="https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html">StatefulWidget</a></li>
+      <li>MarkdownToolbar</li>
+    </ul>
+  </dd>
+
+        
+        
+
+
+
+        
+      </dl>
+    </section>
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="MarkdownToolbar" class="callable">
+          <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/MarkdownToolbar.html">MarkdownToolbar</a></span><span class="signature">(<span class="parameter" id="-param-key">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>, </span><span class="parameter" id="-param-useIncludedTextField"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">useIncludedTextField</span>, </span><span class="parameter" id="-param-controller"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/TextEditingController-class.html">TextEditingController</a>?</span> <span class="parameter-name">controller</span>, </span><span class="parameter" id="-param-focusNode"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/FocusNode-class.html">FocusNode</a>?</span> <span class="parameter-name">focusNode</span>, </span><span class="parameter" id="-param-collapsable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">collapsable</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-alignCollapseButtonEnd"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">alignCollapseButtonEnd</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-flipCollapseButtonIcon"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">flipCollapseButtonIcon</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-backgroundColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">backgroundColor</span> = <span class="default-value">const Color(0xFFEEEEEE)</span>, </span><span class="parameter" id="-param-dropdownTextColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">dropdownTextColor</span> = <span class="default-value">Colors.blue</span>, </span><span class="parameter" id="-param-iconColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">iconColor</span> = <span class="default-value">const Color(0xFF303030)</span>, </span><span class="parameter" id="-param-iconSize"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">iconSize</span> = <span class="default-value">24.0</span>, </span><span class="parameter" id="-param-width"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">width</span> = <span class="default-value">60.0</span>, </span><span class="parameter" id="-param-height"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">height</span> = <span class="default-value">40.0</span>, </span><span class="parameter" id="-param-spacing"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">spacing</span> = <span class="default-value">4.0</span>, </span><span class="parameter" id="-param-runSpacing"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">runSpacing</span> = <span class="default-value">4.0</span>, </span><span class="parameter" id="-param-alignment"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/rendering/WrapAlignment.html">WrapAlignment</a></span> <span class="parameter-name">alignment</span> = <span class="default-value">WrapAlignment.end</span>, </span><span class="parameter" id="-param-boldCharacter"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">boldCharacter</span> = <span class="default-value">&#39;**&#39;</span>, </span><span class="parameter" id="-param-italicCharacter"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">italicCharacter</span> = <span class="default-value">&#39;*&#39;</span>, </span><span class="parameter" id="-param-codeCharacter"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">codeCharacter</span> = <span class="default-value">&#39;```&#39;</span>, </span><span class="parameter" id="-param-bulletedListCharacter"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">bulletedListCharacter</span> = <span class="default-value">&#39;-&#39;</span>, </span><span class="parameter" id="-param-horizontalRuleCharacter"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">horizontalRuleCharacter</span> = <span class="default-value">&#39;---&#39;</span>, </span><span class="parameter" id="-param-hideHeading"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">hideHeading</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-hideBold"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">hideBold</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-hideItalic"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">hideItalic</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-hideStrikethrough"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">hideStrikethrough</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-hideLink"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">hideLink</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-hideImage"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">hideImage</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-hideCode"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">hideCode</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-hideBulletedList"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">hideBulletedList</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-hideNumberedList"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">hideNumberedList</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-hideCheckbox"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">hideCheckbox</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-hideQuote"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">hideQuote</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-hideHorizontalRule"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">hideHorizontalRule</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-showTooltips"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">showTooltips</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-headingTooltip"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">headingTooltip</span> = <span class="default-value">&#39;Heading&#39;</span>, </span><span class="parameter" id="-param-boldTooltip"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">boldTooltip</span> = <span class="default-value">&#39;Bold&#39;</span>, </span><span class="parameter" id="-param-italicTooltip"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">italicTooltip</span> = <span class="default-value">&#39;Italic&#39;</span>, </span><span class="parameter" id="-param-strikethroughTooltip"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">strikethroughTooltip</span> = <span class="default-value">&#39;Strikethrough&#39;</span>, </span><span class="parameter" id="-param-linkTooltip"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">linkTooltip</span> = <span class="default-value">&#39;Link&#39;</span>, </span><span class="parameter" id="-param-imageTooltip"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">imageTooltip</span> = <span class="default-value">&#39;Image&#39;</span>, </span><span class="parameter" id="-param-codeTooltip"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">codeTooltip</span> = <span class="default-value">&#39;Code&#39;</span>, </span><span class="parameter" id="-param-bulletedListTooltip"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">bulletedListTooltip</span> = <span class="default-value">&#39;Bulleted list&#39;</span>, </span><span class="parameter" id="-param-numberedListTooltip"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">numberedListTooltip</span> = <span class="default-value">&#39;Numbered list&#39;</span>, </span><span class="parameter" id="-param-checkboxTooltip"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">checkboxTooltip</span> = <span class="default-value">&#39;Checkbox&#39;</span>, </span><span class="parameter" id="-param-quoteTooltip"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">quoteTooltip</span> = <span class="default-value">&#39;Quote&#39;</span>, </span><span class="parameter" id="-param-horizontalRuleTooltip"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">horizontalRuleTooltip</span> = <span class="default-value">&#39;Horizontal rule&#39;</span>}</span>)</span>
+        </dt>
+        <dd>
+          Creates a <a href="../markdown_toolbar/MarkdownToolbar-class.html">MarkdownToolbar</a> widget.
+            <div class="constructor-modifier features">const</div>
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="alignCollapseButtonEnd" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/alignCollapseButtonEnd.html">alignCollapseButtonEnd</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Align the collapse button at the end. Default: <code>false</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="alignment" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/alignment.html">alignment</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/rendering/WrapAlignment.html">WrapAlignment</a></span> 
+
+</dt>
+<dd>
+  Set the <a href="https://api.flutter.dev/flutter/rendering/WrapAlignment.html">WrapAlignment</a> of the buttons. Default: <code>WrapAlignment.end</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="backgroundColor" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/backgroundColor.html">backgroundColor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a></span> 
+
+</dt>
+<dd>
+  Set the <a href="../markdown_toolbar/MarkdownToolbar/backgroundColor.html">backgroundColor</a> of the buttons. Default: <code>Colors.grey[200]</code>
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="boldCharacter" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/boldCharacter.html">boldCharacter</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  If you want to use an alternative bold character (Default: <code>**</code>),
+assign a custom <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> to <a href="../markdown_toolbar/MarkdownToolbar/boldCharacter.html">boldCharacter</a>. For example <code>__</code>
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="boldTooltip" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/boldTooltip.html">boldTooltip</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Set a custom tooltip <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> for the bold button. Leave blank <code>''</code> to disable tooltip.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="bulletedListCharacter" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/bulletedListCharacter.html">bulletedListCharacter</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  If you want to use an alternative bulleted list character (Default: <code>-</code>),
+assign a custom <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> to <a href="../markdown_toolbar/MarkdownToolbar/bulletedListCharacter.html">bulletedListCharacter</a>. For example <code>*</code>
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="bulletedListTooltip" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/bulletedListTooltip.html">bulletedListTooltip</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Set a custom tooltip <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> for the bulleted list button. Leave blank <code>''</code> to disable tooltip.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="checkboxTooltip" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/checkboxTooltip.html">checkboxTooltip</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Set a custom tooltip <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> for the checkbox button. Leave blank <code>''</code> to disable tooltip.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="codeCharacter" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/codeCharacter.html">codeCharacter</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  If you want to use an alternative code character (Default: <code>```</code>),
+assign a custom <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> to <a href="../markdown_toolbar/MarkdownToolbar/codeCharacter.html">codeCharacter</a>. For example <code>`</code>
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="codeTooltip" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/codeTooltip.html">codeTooltip</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Set a custom tooltip <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> for the code button. Leave blank <code>''</code> to disable tooltip.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="collapsable" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/collapsable.html">collapsable</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Make the toolbar collapsable with a button by setting <a href="../markdown_toolbar/MarkdownToolbar/collapsable.html">collapsable</a> to <code>true</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="controller" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/controller.html">controller</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/widgets/TextEditingController-class.html">TextEditingController</a>?</span> 
+
+</dt>
+<dd>
+  In order to use a custom TextField, assign a <a href="https://api.flutter.dev/flutter/widgets/TextEditingController-class.html">TextEditingController</a> to the <a href="../markdown_toolbar/MarkdownToolbar/controller.html">controller</a> field.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="dropdownTextColor" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/dropdownTextColor.html">dropdownTextColor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a></span> 
+
+</dt>
+<dd>
+  Set the <a href="../markdown_toolbar/MarkdownToolbar/dropdownTextColor.html">dropdownTextColor</a> of the buttons. Default: <code>Colors.blue</code>
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="flipCollapseButtonIcon" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/flipCollapseButtonIcon.html">flipCollapseButtonIcon</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Flip the collapse button icon. Default: <code>false</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="focusNode" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/focusNode.html">focusNode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/widgets/FocusNode-class.html">FocusNode</a>?</span> 
+
+</dt>
+<dd>
+  If using a custom TextField, set the <a href="../markdown_toolbar/MarkdownToolbar/focusNode.html">focusNode</a> to a <a href="https://api.flutter.dev/flutter/widgets/FocusNode-class.html">FocusNode</a> Widget in order
+to focus the text after clicking a button. Use the FocusNode like this:
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features"><span class="">@<a href="https://pub.dev/documentation/meta/1.8.0/meta/nonVirtual-constant.html">nonVirtual</a></span><span class="feature">read-only</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="headingTooltip" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/headingTooltip.html">headingTooltip</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Set a custom tooltip <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> for the heading button. Leave blank <code>''</code> to disable tooltip.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="height" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/height.html">height</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Set the <a href="../markdown_toolbar/MarkdownToolbar/height.html">height</a> of the buttons. Default: <code>40</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hideBold" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/hideBold.html">hideBold</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Hide the bold button by setting <a href="../markdown_toolbar/MarkdownToolbar/hideBold.html">hideBold</a> to <code>true</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hideBulletedList" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/hideBulletedList.html">hideBulletedList</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Hide the bulleted list button by setting <a href="../markdown_toolbar/MarkdownToolbar/hideBulletedList.html">hideBulletedList</a> to <code>true</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hideCheckbox" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/hideCheckbox.html">hideCheckbox</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Hide the checkbox button by setting <a href="../markdown_toolbar/MarkdownToolbar/hideCheckbox.html">hideCheckbox</a> to <code>true</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hideCode" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/hideCode.html">hideCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Hide the code button by setting <a href="../markdown_toolbar/MarkdownToolbar/hideCode.html">hideCode</a> to <code>true</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hideHeading" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/hideHeading.html">hideHeading</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Hide the heading button by setting <a href="../markdown_toolbar/MarkdownToolbar/hideHeading.html">hideHeading</a> to <code>true</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hideHorizontalRule" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/hideHorizontalRule.html">hideHorizontalRule</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Hide the horizontal rule button by setting <a href="../markdown_toolbar/MarkdownToolbar/hideHorizontalRule.html">hideHorizontalRule</a> to <code>true</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hideImage" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/hideImage.html">hideImage</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Hide the image button by setting <a href="../markdown_toolbar/MarkdownToolbar/hideImage.html">hideImage</a> to <code>true</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hideItalic" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/hideItalic.html">hideItalic</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Hide the italic button by setting <a href="../markdown_toolbar/MarkdownToolbar/hideItalic.html">hideItalic</a> to <code>true</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hideLink" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/hideLink.html">hideLink</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Hide the link button by setting <a href="../markdown_toolbar/MarkdownToolbar/hideLink.html">hideLink</a> to <code>true</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hideNumberedList" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/hideNumberedList.html">hideNumberedList</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Hide the numbered list button by setting <a href="../markdown_toolbar/MarkdownToolbar/hideNumberedList.html">hideNumberedList</a> to <code>true</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hideQuote" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/hideQuote.html">hideQuote</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Hide the quote button by setting <a href="../markdown_toolbar/MarkdownToolbar/hideQuote.html">hideQuote</a> to <code>true</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hideStrikethrough" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/hideStrikethrough.html">hideStrikethrough</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Hide the strikethrough button by setting <a href="../markdown_toolbar/MarkdownToolbar/hideStrikethrough.html">hideStrikethrough</a> to <code>true</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="horizontalRuleCharacter" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/horizontalRuleCharacter.html">horizontalRuleCharacter</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  If you want to use an alternative horizontal rule character (Default: <code>---</code>),
+assign a custom <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> to <a href="../markdown_toolbar/MarkdownToolbar/horizontalRuleCharacter.html">horizontalRuleCharacter</a>. For example <code>***</code>
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="horizontalRuleTooltip" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/horizontalRuleTooltip.html">horizontalRuleTooltip</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Set a custom tooltip <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> for the horizontal rule button. Leave blank <code>''</code> to disable tooltip.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="iconColor" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/iconColor.html">iconColor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a></span> 
+
+</dt>
+<dd>
+  Set the <a href="../markdown_toolbar/MarkdownToolbar/iconColor.html">iconColor</a> of the buttons. Default: <code>Colors.grey[850]</code>
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="iconSize" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/iconSize.html">iconSize</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Set the <a href="../markdown_toolbar/MarkdownToolbar/iconSize.html">iconSize</a> of the buttons. Default: <code>24</code>
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="imageTooltip" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/imageTooltip.html">imageTooltip</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Set a custom tooltip <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> for the image button. Leave blank <code>''</code> to disable tooltip.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="italicCharacter" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/italicCharacter.html">italicCharacter</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  If you want to use an alternative italic character (Default: <code>*</code>),
+assign a custom <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> to <a href="../markdown_toolbar/MarkdownToolbar/italicCharacter.html">italicCharacter</a>. For example <code>_</code>
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="italicTooltip" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/italicTooltip.html">italicTooltip</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Set a custom tooltip <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> for the italic button. Leave blank <code>''</code> to disable tooltip.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="key" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/key.html">key</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> 
+
+</dt>
+<dd class="inherited">
+  Controls how one widget replaces another widget in the tree.
+  <div class="features"><span class="feature">final</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="linkTooltip" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/linkTooltip.html">linkTooltip</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Set a custom tooltip <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> for the link button. Leave blank <code>''</code> to disable tooltip.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="numberedListTooltip" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/numberedListTooltip.html">numberedListTooltip</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Set a custom tooltip <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> for the numbered list button. Leave blank <code>''</code> to disable tooltip.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="quoteTooltip" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/quoteTooltip.html">quoteTooltip</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Set a custom tooltip <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> for the quote button. Leave blank <code>''</code> to disable tooltip.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="runSpacing" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/runSpacing.html">runSpacing</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Set the vertical <a href="../markdown_toolbar/MarkdownToolbar/runSpacing.html">runSpacing</a> of the buttons. Default: <code>4.0</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features"><span class="feature">read-only</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="showTooltips" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/showTooltips.html">showTooltips</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Disable all tooltips by setting <a href="../markdown_toolbar/MarkdownToolbar/showTooltips.html">showTooltips</a> to <code>false</code>. Default: <code>true</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="spacing" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/spacing.html">spacing</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Set the horizontal <a href="../markdown_toolbar/MarkdownToolbar/spacing.html">spacing</a> of the buttons. Default: <code>4.0</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="strikethroughTooltip" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/strikethroughTooltip.html">strikethroughTooltip</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Set a custom tooltip <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> for the strikethrough button. Leave blank <code>''</code> to disable tooltip.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="useIncludedTextField" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/useIncludedTextField.html">useIncludedTextField</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  It is recommended that you use your own TextField outside this widget for more customization.
+To do that, set <a href="../markdown_toolbar/MarkdownToolbar/useIncludedTextField.html">useIncludedTextField</a> to <code>false</code> and implement your own TextField outside.
+IMPORTANT: Remember to set the same <a href="../markdown_toolbar/MarkdownToolbar/controller.html">controller</a> and <a href="../markdown_toolbar/MarkdownToolbar/focusNode.html">focusNode</a> in the TextField as the ones in your <a href="../markdown_toolbar/MarkdownToolbar-class.html">MarkdownToolbar</a>.
+Hover over the 2 fields for more details.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="width" class="property">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/width.html">width</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Set the <a href="../markdown_toolbar/MarkdownToolbar/width.html">width</a> of the buttons. Default: <code>60</code>.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="createElement" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/StatefulWidget/createElement.html">createElement</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/widgets/StatefulElement-class.html">StatefulElement</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Creates a <a href="https://api.flutter.dev/flutter/widgets/StatefulElement-class.html">StatefulElement</a> to manage this widget's location in the tree.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="createState" class="callable">
+  <span class="name"><a href="../markdown_toolbar/MarkdownToolbar/createState.html">createState</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/widgets/State-class.html">State</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../markdown_toolbar/MarkdownToolbar-class.html">MarkdownToolbar</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Creates the mutable state for this widget at a given location in the tree.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="debugDescribeChildren" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a list of <code>DiagnosticsNode</code> objects describing this node's
+children.
+  <div class="features"><span class="">@<a href="https://pub.dev/documentation/meta/1.8.0/meta/protected-constant.html">protected</a></span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="debugFillProperties" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/debugFillProperties.html">debugFillProperties</a></span><span class="signature">(<wbr><span class="parameter" id="debugFillProperties-param-properties"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticPropertiesBuilder-class.html">DiagnosticPropertiesBuilder</a></span> <span class="parameter-name">properties</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Add additional properties associated with the node.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toDiagnosticsNode" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></span><span class="signature">(<wbr><span class="parameter" id="toDiagnosticsNode-param-name">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">name</span>, </span><span class="parameter" id="toDiagnosticsNode-param-style"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticsTreeStyle.html">DiagnosticsTreeStyle</a>?</span> <span class="parameter-name">style</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a debug representation of the object that is used by debugging
+tools and by <a href="https://api.flutter.dev/flutter/foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsNode.toStringDeep</a>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toString.html">toString</a></span><span class="signature">(<wbr><span class="parameter" id="toString-param-minLevel">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticLevel.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span> = <span class="default-value">DiagnosticLevel.info</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toStringDeep" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></span><span class="signature">(<wbr><span class="parameter" id="toStringDeep-param-prefixLineOne">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixLineOne</span> = <span class="default-value">&#39;&#39;</span>, </span><span class="parameter" id="toStringDeep-param-prefixOtherLines"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">prefixOtherLines</span>, </span><span class="parameter" id="toStringDeep-param-minLevel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticLevel.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span> = <span class="default-value">DiagnosticLevel.debug</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a string representation of this node and its descendants.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toStringShallow" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></span><span class="signature">(<wbr><span class="parameter" id="toStringShallow-param-joiner">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">joiner</span> = <span class="default-value">&#39;, &#39;</span>, </span><span class="parameter" id="toStringShallow-param-minLevel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticLevel.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span> = <span class="default-value">DiagnosticLevel.debug</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a one-line detailed description of the object.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toStringShort" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html">toStringShort</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A short, textual description of this widget.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features"><span class="">@<a href="https://pub.dev/documentation/meta/1.8.0/meta/nonVirtual-constant.html">nonVirtual</a></span><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+    
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">markdown_toolbar</a></li>
+  <li><a href="../markdown_toolbar/markdown_toolbar-library.html">markdown_toolbar</a></li>
+  <li class="self-crumb">MarkdownToolbar class</li>
+</ol>
+
+
+    <h5>markdown_toolbar library</h5>
+    <ol>
+      <li class="section-title"><a href="../markdown_toolbar/markdown_toolbar-library.html#classes">Classes</a></li>
+        <li><a href="../markdown_toolbar/MarkdownToolbar-class.html">MarkdownToolbar</a></li>
+
+
+
+
+
+
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+        <li class="section-title"><a href="../markdown_toolbar/MarkdownToolbar-class.html#constructors">Constructors</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/MarkdownToolbar.html">MarkdownToolbar</a></li>
+
+
+        <li class="section-title">
+          <a href="../markdown_toolbar/MarkdownToolbar-class.html#instance-properties">Properties</a>
+        </li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/alignCollapseButtonEnd.html">alignCollapseButtonEnd</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/alignment.html">alignment</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/backgroundColor.html">backgroundColor</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/boldCharacter.html">boldCharacter</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/boldTooltip.html">boldTooltip</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/bulletedListCharacter.html">bulletedListCharacter</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/bulletedListTooltip.html">bulletedListTooltip</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/checkboxTooltip.html">checkboxTooltip</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/codeCharacter.html">codeCharacter</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/codeTooltip.html">codeTooltip</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/collapsable.html">collapsable</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/controller.html">controller</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/dropdownTextColor.html">dropdownTextColor</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/flipCollapseButtonIcon.html">flipCollapseButtonIcon</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/focusNode.html">focusNode</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/hashCode.html">hashCode</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/headingTooltip.html">headingTooltip</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/height.html">height</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/hideBold.html">hideBold</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/hideBulletedList.html">hideBulletedList</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/hideCheckbox.html">hideCheckbox</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/hideCode.html">hideCode</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/hideHeading.html">hideHeading</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/hideHorizontalRule.html">hideHorizontalRule</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/hideImage.html">hideImage</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/hideItalic.html">hideItalic</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/hideLink.html">hideLink</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/hideNumberedList.html">hideNumberedList</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/hideQuote.html">hideQuote</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/hideStrikethrough.html">hideStrikethrough</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/horizontalRuleCharacter.html">horizontalRuleCharacter</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/horizontalRuleTooltip.html">horizontalRuleTooltip</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/iconColor.html">iconColor</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/iconSize.html">iconSize</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/imageTooltip.html">imageTooltip</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/italicCharacter.html">italicCharacter</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/italicTooltip.html">italicTooltip</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/key.html">key</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/linkTooltip.html">linkTooltip</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/numberedListTooltip.html">numberedListTooltip</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/quoteTooltip.html">quoteTooltip</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/runSpacing.html">runSpacing</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/showTooltips.html">showTooltips</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/spacing.html">spacing</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/strikethroughTooltip.html">strikethroughTooltip</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/useIncludedTextField.html">useIncludedTextField</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/width.html">width</a></li>
+
+        <li class="section-title"><a href="../markdown_toolbar/MarkdownToolbar-class.html#instance-methods">Methods</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/StatefulWidget/createElement.html">createElement</a></li>
+          <li><a href="../markdown_toolbar/MarkdownToolbar/createState.html">createState</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/debugFillProperties.html">debugFillProperties</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toString.html">toString</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html">toStringShort</a></li>
+
+        <li class="section-title inherited"><a href="../markdown_toolbar/MarkdownToolbar-class.html#operators">Operators</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    markdown_toolbar
+      0.3.1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
