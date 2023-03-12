@@ -1,3 +1,7 @@
+# 0.3.3
+
+* Update README
+
 # 0.3.2
 
 * Minor code style changes
