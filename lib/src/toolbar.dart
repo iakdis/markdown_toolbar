@@ -240,10 +240,10 @@ class MarkdownToolbar extends StatefulWidget {
   final String horizontalRuleTooltip;
 
   @override
-  State<MarkdownToolbar> createState() => _MarkdownToolbarState();
+  State<MarkdownToolbar> createState() => MarkdownToolbarState();
 }
 
-class _MarkdownToolbarState extends State<MarkdownToolbar> {
+class MarkdownToolbarState extends State<MarkdownToolbar> {
   var isCollapsed = false;
 
   final TextEditingController _includedController = TextEditingController();
