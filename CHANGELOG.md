@@ -1,3 +1,7 @@
+# 0.4.1
+
+* Add markdown topic to pubspec.yaml
+
 # 0.4.0
 
 * Expose MarkdownToolbarState by remove underscore to allow calling functions like onBoldPressed with a GlobalKey: `markdownToolbarKey.currentState?.onBoldPressed()`
