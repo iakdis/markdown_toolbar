@@ -1,6 +1,6 @@
 name: markdown_toolbar
 description: A customizable toolbar to enhance your experience of writing Markdown in Flutter apps.
-version: 0.4.1
+version: 0.5.0
 repository: https://github.com/iakmds/markdown_toolbar
 topics:
  - markdown
