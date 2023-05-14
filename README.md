@@ -144,6 +144,7 @@ For a complete example, check out [example.dart](https://github.com/iakmds/markd
 | dropdownTextColor       | Color                  | Colors.blue        | Text color in the dropdown selections                                                        |
 | iconColor               | Color                  | Color(0xFF303030)  | Icon color of the buttons                                                                    |
 | iconSize                | double                 | 24.0               | Icon size of the buttons                                                                     |
+| borderRadius            | BorderRadius           | BorderRadius.all(Radius.circular(6.0)) | Border radius of the buttons                                             |
 | width                   | double                 | 60.0               | Width of the buttons                                                                         |
 | height                  | double                 | 40.0               | Height of the buttons                                                                        |
 | spacing                 | double                 | 4.0                | Spacing between the buttons                                                                  |

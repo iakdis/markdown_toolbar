@@ -26,6 +26,7 @@ class MarkdownToolbar extends StatefulWidget {
     this.dropdownTextColor = Colors.blue,
     this.iconColor = const Color(0xFF303030),
     this.iconSize = 24.0,
+    this.borderRadius = const BorderRadius.all(Radius.circular(6.0)),
     this.width = 60.0,
     this.height = 40.0,
     this.spacing = 4.0,
@@ -128,6 +129,9 @@ class MarkdownToolbar extends StatefulWidget {
 
   /// Set the [iconSize] of the buttons. Default: `24`
   final double iconSize;
+
+  /// Set the [borderRadius] of the buttons. Default: `BorderRadius.all(Radius.circular(6.0))`
+  final BorderRadius borderRadius;
 
   /// Set the [width] of the buttons. Default: `60`.
   final double width;
@@ -288,6 +292,8 @@ class MarkdownToolbarState extends State<MarkdownToolbar> {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: widget.backgroundColor,
                   padding: const EdgeInsets.all(0),
+                  shape:
+                      RoundedRectangleBorder(borderRadius: widget.borderRadius),
                 ),
                 onPressed: () {},
                 child: Stack(
@@ -305,17 +311,22 @@ class MarkdownToolbarState extends State<MarkdownToolbar> {
                             color: widget.iconColor,
                             size: widget.iconSize,
                           ),
-                    DropdownButtonHideUnderline(
-                      child: DropdownButton(
-                        isExpanded: true,
-                        //value: 0,
-                        items: dropdownItems,
-                        onChanged: (option) {
-                          if (onDropdownButtonSelect != null) {
-                            onDropdownButtonSelect(option ?? 0);
-                          }
-                        },
-                        icon: Container(),
+                    ClipRRect(
+                      borderRadius: widget.borderRadius,
+                      child: Material(
+                        color: Colors.transparent,
+                        child: DropdownButtonHideUnderline(
+                          child: DropdownButton(
+                            isExpanded: true,
+                            items: dropdownItems,
+                            onChanged: (option) {
+                              if (onDropdownButtonSelect != null) {
+                                onDropdownButtonSelect(option ?? 0);
+                              }
+                            },
+                            icon: Container(),
+                          ),
+                        ),
                       ),
                     )
                   ],
@@ -330,6 +341,8 @@ class MarkdownToolbarState extends State<MarkdownToolbar> {
                   backgroundColor: widget.backgroundColor,
                   foregroundColor: widget.iconColor,
                   padding: const EdgeInsets.all(0),
+                  shape:
+                      RoundedRectangleBorder(borderRadius: widget.borderRadius),
                 ),
                 onPressed: dropdown ? null : onPressed,
                 child: Icon(
@@ -351,6 +364,7 @@ class MarkdownToolbarState extends State<MarkdownToolbar> {
           backgroundColor: widget.backgroundColor,
           foregroundColor: widget.iconColor,
           padding: const EdgeInsets.all(0),
+          shape: RoundedRectangleBorder(borderRadius: widget.borderRadius),
         ),
         onPressed: () => setState(() {
           isCollapsed = !isCollapsed;

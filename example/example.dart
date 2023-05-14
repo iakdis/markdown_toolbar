@@ -62,6 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 // dropdownTextColor: Colors.red,
                 // iconColor: Colors.white,
                 // iconSize: 30,
+                // borderRadius: const BorderRadius.all(Radius.circular(16.0)),
                 // width: 70,
                 // height: 50,
                 // spacing: 16.0,
