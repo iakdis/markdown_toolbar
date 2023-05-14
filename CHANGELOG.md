@@ -1,3 +1,8 @@
+# 0.5.0
+
+* Added more customization options
+    * borderRadius
+
 # 0.4.1
 
 * Add markdown topic to pubspec.yaml
