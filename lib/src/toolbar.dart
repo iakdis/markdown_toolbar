@@ -47,6 +47,8 @@ class MarkdownToolbar extends StatefulWidget {
     this.hideBulletedList = false,
     this.hideNumberedList = false,
     this.hideCheckbox = false,
+    this.CheckboxUncheckedCharacter = "",
+    this.CheckboxCheckedCharacter = "",
     this.hideQuote = false,
     this.hideHorizontalRule = false,
     this.showTooltips = true,
@@ -197,6 +199,8 @@ class MarkdownToolbar extends StatefulWidget {
 
   /// Hide the checkbox button by setting [hideCheckbox] to `true`.
   final bool hideCheckbox;
+  final String customCheckboxUncheckedCharacter;
+  final String customCheckboxCheckedCharacter;
 
   /// Hide the quote button by setting [hideQuote] to `true`.
   final bool hideQuote;
@@ -644,6 +648,8 @@ class MarkdownToolbarState extends State<MarkdownToolbar> {
       customCodeCharacter: widget.codeCharacter,
       customBulletedListCharacter: widget.bulletedListCharacter,
       customHorizontalRuleCharacter: widget.horizontalRuleCharacter,
+      customCheckboxUncheckedCharacter: widget.CheckboxUncheckedCharacter,
+      customCheckboxCheckedCharacter: widget.CheckboxCheckedCharacter,
     );
   }
 
