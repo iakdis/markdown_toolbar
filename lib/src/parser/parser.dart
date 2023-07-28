@@ -164,8 +164,8 @@ class Format {
           multipleCharacters: (customCheckboxUncheckedCharacter != null &&
                   customCheckboxCheckedCharacter != null)
               ? [
-                  customCheckboxUncheckedCharacter,
-                  customCheckboxCheckedCharacter
+                  customCheckboxUncheckedCharacter!,
+                  customCheckboxCheckedCharacter!
                 ]
               : ['- [ ] ', '- [x] '],
           multipleCharactersOption: option,
