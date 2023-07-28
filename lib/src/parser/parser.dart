@@ -161,11 +161,13 @@ class Format {
           controller: controller,
           selection: selection,
           placeholder: 'Checkbox',
-          multipleCharacters: [
-                customCheckboxUncheckedCharacter!,
-                customCheckboxCheckedCharacter!
-              ] ??
-              ['- [ ] ', '- [x] '],
+          multipleCharacters: (customCheckboxUncheckedCharacter &&
+                  customCheckboxCheckedCharacter)
+              ? [
+                  customCheckboxUncheckedCharacter,
+                  customCheckboxCheckedCharacter
+                ]
+              : ['- [ ] ', '- [x] '],
           multipleCharactersOption: option,
         ).format();
         break;
