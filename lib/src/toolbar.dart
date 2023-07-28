@@ -202,12 +202,12 @@ class MarkdownToolbar extends StatefulWidget {
 
   /// If you want to use an alternative unchecked checkbox character (Default: `- [ ] `),
   /// assign a custom [String] to [checkboxUncheckedCharacter]. For example `{{[[TODO]]}} `
-  /// Make sure to set both {checkboxUncheckedCharacter} and [checkboxCheckedCharacter]
+  /// You should probably set both [checkboxUncheckedCharacter] and [checkboxCheckedCharacter]
   final String checkboxUncheckedCharacter;
 
   /// If you want to use an alternative checked checkbox character (Default: `- [x] `),
   /// assign a custom [String] to [checkboxCheckedCharacter]. For example `{{[[DONE]]}} `
-  /// Make sure to set both {checkboxUncheckedCharacter} and [checkboxCheckedCharacter]
+  /// You should probably set both [checkboxUncheckedCharacter] and [checkboxCheckedCharacter]
   final String checkboxCheckedCharacter;
 
   /// Hide the quote button by setting [hideQuote] to `true`.
