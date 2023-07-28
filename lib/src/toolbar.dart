@@ -37,6 +37,8 @@ class MarkdownToolbar extends StatefulWidget {
     this.codeCharacter = '```',
     this.bulletedListCharacter = '-',
     this.horizontalRuleCharacter = '---',
+    this.checkboxCheckedCharacter = "- [x] ",
+    this.checkboxUncheckedCharacter = "- [ ] ",
     this.hideHeading = false,
     this.hideBold = false,
     this.hideItalic = false,
@@ -197,6 +199,16 @@ class MarkdownToolbar extends StatefulWidget {
 
   /// Hide the checkbox button by setting [hideCheckbox] to `true`.
   final bool hideCheckbox;
+
+  /// If you want to use an alternative unchecked checkbox character (Default: `- [ ] `),
+  /// assign a custom [String] to [checkboxUncheckedCharacter]. For example `{{[[TODO]]}} `
+  /// You should probably set both [checkboxUncheckedCharacter] and [checkboxCheckedCharacter]
+  final String checkboxUncheckedCharacter;
+
+  /// If you want to use an alternative checked checkbox character (Default: `- [x] `),
+  /// assign a custom [String] to [checkboxCheckedCharacter]. For example `{{[[DONE]]}} `
+  /// You should probably set both [checkboxUncheckedCharacter] and [checkboxCheckedCharacter]
+  final String checkboxCheckedCharacter;
 
   /// Hide the quote button by setting [hideQuote] to `true`.
   final bool hideQuote;
@@ -644,6 +656,8 @@ class MarkdownToolbarState extends State<MarkdownToolbar> {
       customCodeCharacter: widget.codeCharacter,
       customBulletedListCharacter: widget.bulletedListCharacter,
       customHorizontalRuleCharacter: widget.horizontalRuleCharacter,
+      customCheckboxUncheckedCharacter: widget.checkboxUncheckedCharacter,
+      customCheckboxCheckedCharacter: widget.checkboxCheckedCharacter,
     );
   }
 

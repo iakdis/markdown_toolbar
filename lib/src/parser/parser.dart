@@ -66,6 +66,8 @@ class Format {
     String? customCodeCharacter,
     String? customBulletedListCharacter,
     String? customHorizontalRuleCharacter,
+    String? customCheckboxUncheckedCharacter,
+    String? customCheckboxCheckedCharacter,
   }) {
     switch (markdownToolbarOption) {
       case MarkdownToolbarOption.bold:
@@ -159,7 +161,13 @@ class Format {
           controller: controller,
           selection: selection,
           placeholder: 'Checkbox',
-          multipleCharacters: ['- [ ] ', '- [x] '],
+          multipleCharacters: (customCheckboxUncheckedCharacter != null &&
+                  customCheckboxCheckedCharacter != null)
+              ? [
+                  customCheckboxUncheckedCharacter!,
+                  customCheckboxCheckedCharacter!
+                ]
+              : ['- [ ] ', '- [x] '],
           multipleCharactersOption: option,
         ).format();
         break;

@@ -155,6 +155,8 @@ For a complete example, check out [example.dart](https://github.com/iakmds/markd
 | codeCharacter           | String                 | '```'              | Markdown character for code                                                                  |
 | bulletedListCharacter   | String                 | '-'                | Markdown character for bulleted lists                                                        |
 | horizontalRuleCharacter | String                 | '---'              | Markdown character for horizontal rules                                                      |
+| checkboxUncheckedCharacter| String               | '- [ ] '           | Markdown character for unchecked checkbox                                                    |
+| checkboxCheckedCharacter| String                 | '- [x] '           | Markdown character for checked checkbox                                                      |
 | hide[Button 1-9]        | bool                   | false              | Hide certain buttons in the toolbar (replace [Button] with the available buttons)            |
 | showTooltips            | bool                   | true               | Show tooltips for the buttons                                                                |
 | [button 1-9]Tooltip     | String                 | '[Name of button]' | Custom tooltips when hovering over the buttons (replace [button] with the available buttons) |
