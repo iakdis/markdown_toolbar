@@ -162,8 +162,8 @@ class Format {
           selection: selection,
           placeholder: 'Checkbox',
           multipleCharacters: [
-                customCheckboxUncheckedCharacter?,
-                customCheckboxCheckedCharacter?
+                customCheckboxUncheckedCharacter!,
+                customCheckboxCheckedCharacter!
               ] ??
               ['- [ ] ', '- [x] '],
           multipleCharactersOption: option,
