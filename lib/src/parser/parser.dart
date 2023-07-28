@@ -161,8 +161,8 @@ class Format {
           controller: controller,
           selection: selection,
           placeholder: 'Checkbox',
-          multipleCharacters: (customCheckboxUncheckedCharacter &&
-                  customCheckboxCheckedCharacter)
+          multipleCharacters: (customCheckboxUncheckedCharacter != null &&
+                  customCheckboxCheckedCharacter != null)
               ? [
                   customCheckboxUncheckedCharacter,
                   customCheckboxCheckedCharacter
